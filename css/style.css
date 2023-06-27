@@ -156,7 +156,7 @@ nav li:hover:after {
   transform: scaleX(1);
 }
 
-.Reseaux li:hover, .IconHeader img:hover {
+.Reseaux li:hover, .IconHeader img:hover, #Reseaux li:hover{
   background-color: var(--Orange);
   opacity: 1.4;
   transition: 1s ;   
