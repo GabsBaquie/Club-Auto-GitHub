@@ -1,0 +1,801 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  outline: none;
+  list-style:none;
+}
+
+:root {
+  --Blanc:#ffffff ;
+  --OrangeClair: #fab637 ;
+  --Rouge: #ff4848 ;
+  --Orange: #cc6119 ;
+  --Gris: #eceff3c9 ;
+  --Noir: #232628 ;
+  --Bleu: #6c98e1 ;
+  
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header{
+  background-image:url(../image/vehicule1.jpg); 
+  background-size: cover; 
+}
+
+/* ------ Premiere Page ----- */
+
+.HautDePage {
+  background-color: var(--Noir);
+  color: var(--Blanc);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  padding: 15px 85px 15px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  max-width: 20px;
+  color: var(--Orange);
+}
+
+/* ---- Img de premiere Page ---- */
+.HautDePage img{
+  position: absolute;
+  width: 50px;
+  margin-left:-55px;
+  }
+
+.IconHeader img {
+  position: relative;
+  width: 50px;
+  margin: 10px;
+  background-color:rgba(128, 128, 128, 0.333);
+  border: solid 10px transparent;
+  border-radius: 50%;
+  overflow: hidden;
+}
+ .Info{
+    flex-basis: 320px;
+  }
+  #telephone {
+    flex-basis: 120px;
+  }
+  #telephone img {
+    top: 25px;
+  }
+  #logo{  
+    flex-basis: 265px;
+  }
+  .IconHeader{
+    flex-basis: 150px;
+  }
+
+/* ----- Menu Bar Mobile ----- */
+#openBtn, #closeBtn {
+    display: none;
+}
+
+/* ----- Nav Bar ----- */
+
+nav {
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px 85px 15px;
+  width: 100%;
+  height: 4.5em;
+  align-items: center;
+  display: inline-flex;
+  justify-content: flex-end;
+  background-color: var(--Gris);
+  list-style: none;
+}
+nav ul {
+  text-align: center;
+  margin: 0 50px;
+  display: flex;
+  justify-content: flex-end
+}
+ nav a {
+  color: #232628;
+  padding: 1.69em 30px;
+}
+
+nav li.active {
+  color: var(--Blanc);
+  background-color: var(--Orange);
+}
+nav li.active a {
+  color: #ffffff;
+}
+.hover-bg{
+  width: 100px;
+}
+
+/* -------- Hover NavBar ------- */
+nav li.active a:hover{
+  color: var(--Noir);
+}
+nav a:hover{
+    color: white;
+    transition: ease 0.8s;
+    opacity: 2;
+    font-size: 17px;
+} 
+
+nav li {
+  position: relative;
+  padding: 1.69em 5px;  
+  z-index: 1;
+} 
+
+nav li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--Orange);
+  transition: transform 0.3s ease;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: width;
+}
+
+nav li:hover:after {
+  transform: scaleX(1);
+}
+
+.Reseaux li:hover, .IconHeader img:hover {
+  background-color: var(--Orange);
+  opacity: 1.4;
+  transition: 1s ;   
+}
+
+.BasDePage {
+  background-color: var(--Noir);
+  color: var(--Blanc);
+  margin-top: 71vh;
+  padding: 40px 0px 45px 125px;
+  
+}
+h2 {
+font-size: 3rem;
+}
+.Span {
+font-size: 1em;
+margin-right: 5px;
+} 
+
+/* ------------ Page 2 ----------------- */
+
+.container {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  margin: 40px 100px;
+  /* max-width: 1700px; */
+  grid-gap: 20px;
+  background-color: var(--Blanc);
+}
+
+.box h2 {
+    font-size: 30px;
+    margin-left: 40px;
+    color: var(--Noir);
+}
+.box h3{
+  font-size: 20px;
+  padding-top: 30px;
+  margin-left: 50px;
+  width: 80%;
+}
+.box p {
+  margin: 30px 40px 0px 54px;
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif ;
+  font-weight: bold;
+}
+#text2 p{
+  margin: 30px 40px 0px 0px;
+}
+#text2 h2{
+  margin-left:0;
+}
+.box .HrGris{
+  background-color: var(--Gris);
+  border: solid var(--Gris);
+  margin: 25px 0;
+  opacity: 0.3;
+}
+#liste{
+  list-style: none;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+#liste i{
+  position: absolute;
+  left: 95px;
+  margin-top:25px ;
+  font-size: 30px;
+}
+ #liste li h3 {
+  margin: 10px;
+}
+.image{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;  
+}
+
+/* ------------ Page 3 ----------- */
+#container{
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  background-image: url(../image/vente-location.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 150px 90px;
+}
+ #box1 p, #box2 p{
+  text-align: initial;
+  margin: 10px 65px;
+  font-size: 25px;
+  height:fit-content;
+  max-height: 60em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#box1 {
+  background-color: #fab637ee;
+}
+#box2 {
+  background-color: #ff4848eb;
+}
+#box1, #box2 {
+  height:fit-content;
+  max-height: 50em;
+  flex-basis: 50%;
+  padding-bottom:50px;
+  text-align: initial;
+  color: var(--Blanc);
+}
+#box1 h2 , #box2 h2 {
+  color: var(--Noir);
+  margin: 90px 70px 40px;
+  font-size: 40px;
+}
+
+/* -------- Vehicules Recents------- */
+#section2 {
+ background-color: var(--Noir);
+ display: flex;
+ flex-wrap: wrap;
+ column-gap: 40px;
+ justify-content: center;
+ min-height:50em;
+}
+.VehiculesRecents {
+ flex-basis: 80%;
+}
+
+#section2 h2 {
+ width: 100%;
+ font-size: 55px;
+ padding: 60px 0 ;
+ text-align: center;
+ color: var(--Blanc);
+}
+hr {
+ background-color: var(--Orange);
+ border: 2px solid var(--Orange);
+ margin: 10px 150px 50px;
+}
+.Vehicules{
+  flex-basis: 27%;
+}
+
+#section2 img {
+  /* width: 500px; */
+  max-width: 100%;
+}
+#section2 h3 {
+  color: var(--Blanc);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-align: start;
+  padding-top: 30px;
+  width: 166px;
+  margin-left: 20px;
+}
+
+.InfoCar {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  background-color:#373C3F;
+  /* width: 500px; */
+  min-height: 130px;
+  max-width: 100%;
+}
+.InfoCar hr {
+  color:var(--Gris);
+  border: 1px solid;
+  opacity: 0.3;
+  margin: 30px 15px;
+
+}
+button {
+  position: sticky;
+  left: 12em;
+  overflow: hidden;
+  background-color: var(--Bleu);
+  color: var(--Blanc);
+  font-weight: bold;
+  font-size: 25px;
+  border: none;
+  height: 60px;
+  width: 130px;
+  margin: 20px 20px 20px 0;
+}
+#Promo{
+  height: 60px;
+}
+.Promo {
+  color: var(--Noir);
+  text-decoration: line-through ;
+  font-family: 'Open Sans', sans-serif ;
+}
+
+/* ------- Page 4 --------- */
+.Info1{
+  flex-basis: 20%;
+}
+#Page4{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  justify-content: center;
+  margin: 0 50px 80px;
+}
+#Page4 h2{
+  flex-basis: 100%;
+  font-size: 45px;
+  text-align: center;
+  margin: 3vh 0;
+}
+#Page4 img {
+  width: 55px;
+  margin:-3.5rem -1em;
+}
+#Page4 h3 {
+  font-size: 18px;
+  margin-left: 50px;
+}
+
+#Page4 p {
+  font-family:'Open Sans', sans-serif ;
+  opacity: 0.7;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+
+#Contact{
+  position: inherit;
+  margin-top: 40px;
+  width: 250px;
+  height: 50px;
+  margin: 50px 50px 0;
+}
+/* ----------- Page 5 ----------------- */
+.DernierePage {
+  max-height: 60em;
+  padding: 5% 45% 40% 5%;
+  background-image: url(../image/vehicule3.jpg);
+  background-size: cover;
+}
+#box {
+  background-color: #fab637f0;
+  padding: 120px;
+  }
+  #box h3{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 55px;
+  }
+#box span {
+  color: var(--Blanc);
+  font-size: 55px;
+}
+#box p {
+  
+  padding-top: 20px ;
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif; 
+  font-weight: bolder;
+}
+/* ------------- Footer ---------- */
+footer{
+  padding: 0 100px;
+  background-color: var(--Noir);
+  height: auto;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 40px;
+}
+.footer{
+  flex-basis: 20%;
+}
+
+#SpanBleu {
+  color: var(--Bleu);
+  font-size: 15px;
+}
+footer h4{
+  color: var(--Blanc);
+  margin-top: 6vh;
+  margin-bottom: 2vh;
+  font-size: 15px;
+  
+}
+footer p {
+  color: var(--Gris);
+  margin-top: 2vh;
+  
+}
+#ClubAuto p {
+  font-family: 'Open Sans', sans-serif; 
+  width: 250px ;
+  
+}
+#Horaire p {
+  margin-right: 5px;
+}
+#Mail #Send {
+  background-color: var(--Orange);
+  padding: 0.39em 0.6em 0.39em;
+  margin: 0 -48px -13px;
+  border: none;
+  
+}
+
+#Mail input {
+  padding: 0.55rem 3rem;
+  border-width: 2px;
+  border-style: inset;
+}
+
+#Reseaux ul{
+  display: flex;
+  list-style: none; 
+  margin: 0% 5px;
+}
+
+#Reseaux li {
+  background:rgba(128, 128, 128, 0.333);
+  margin: 0% 5px;
+  width: 60px;
+  height: 50px;
+  
+} 
+
+#Reseaux img {
+  margin-top: 0.5em;
+  margin-left: 0.9em;
+  width: 2em;
+}
+
+/*-------------- Copyright ---------------*/
+
+.HrGris {
+  border: 1px solid var(--Gris);
+  opacity: 0.3;
+  margin-top: 2em;
+}
+#Copyright {
+  flex-basis: 100% ;
+  color: var(--Gris);
+  opacity: 0.3;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif; 
+}
+#Copyright p{
+  margin-bottom: 50px;
+}
+
+
+
+/* ::::::::  Medias Queries :::::::::::: */
+
+@media screen and (max-width: 1366px){
+
+
+  /* ------ Page 1 ------ */
+  /* .box p {
+  margin: 30px 0 0; 
+  }
+  .box h2 , .box h3{
+    margin: 0;
+  } */
+  /* ------ Page 2 -------- */
+  
+}
+
+@media screen and (max-width:970px) {
+
+  /* ------- Display None --------- */
+  .HautDePage h1,.Info, .IconHeader {
+    display: none;
+  }
+  #Car2, #Car3{
+    display: none;
+  }
+
+  /* --------- Header ------------ */
+  .HautDePage{
+    display: block;
+  }
+   #telephone img{
+    width: 40px;
+    margin: 0;
+    top: 30px;
+    left: 2.5em;
+  }
+  #telephone p{
+    position: absolute;
+    top: 30px;
+  }
+  .BasDePage{
+    display: block;
+    margin: -1px 0;
+    padding: 60px 0 20px;
+  }
+  .BasDePage h2{
+    font-size: 40px;
+    margin-left: 1em;
+  }
+
+  nav {
+    display: block;
+    padding: 0;
+    width: 0;
+    height: 0;
+  }
+  /* ------ Burger Menu -------- */
+
+ /* Sidenav menu */
+  .sidenav {
+    display: inline;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -250px;
+    background-color:rgba(0, 0, 0, 0.777);
+    backdrop-filter: blur(7px);
+    padding-top: 60px;
+    transition: all ease 3s;
+  }
+
+    /* Active class */
+    .sidenav.active {
+      right: 0; 
+      transition: all ease 2s;
+    }
+
+  #openBtn{
+    display: block;
+  }
+  
+  .sidenav ul {
+    display: block;
+    list-style-type: none;
+    margin: 100px 0;
+  }
+  
+  /* Sidenav menu links */
+
+  .sidenav a {
+    text-align: start;
+    color: var(--Orange);
+    display: block;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+/* ------ Hover Nav --------- */
+
+  .sidenav li a:hover {
+    font-size: 23px;
+    color:rgb(255, 108, 17)  ;
+    transition: ease 1s;
+  }
+  nav li:after {
+    display: none;
+  }
+  nav li:hover:after {
+    display: none;
+  }
+  .sidenav a:visited {
+  color: var(--Orange); 
+  }
+  nav li.active a:visited {
+    color: #ffffff;
+  }
+  nav li.active a:hover {
+    color: #ffffff;
+}
+  nav li.active {
+    background-color:transparent;
+  }
+  
+
+
+/* :::::: Transition ::::::::::: */
+
+/* ----- Active child */
+.sidenav li {
+  width: 0;
+  transition: width 0.5s ease, transform 3s ease;
+  transform: translateX(100%);
+}
+
+.sidenav.active li {
+  width: 150px;
+  margin-left: 50px;
+  transform: translateX(0);
+  transition-delay: 0.1s;
+}
+
+
+.sidenav.active li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.sidenav.active li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.sidenav.active li:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+/* ::::::::::::::::::::::::::::::::::::: */
+  
+  /* ---- Close btn ---- */
+  .sidenav .close , #closeBtn {
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 23px;
+    font-size: 36px;
+  }
+  a#closeBtn {
+    padding: 8px 50px 32px;
+    font-size: 30px;
+  }
+
+  /* ----- Open Btn ----- */
+    #openBtn {
+    color: var(--Bleu);
+    position: absolute;
+    right: 70px;
+    top: 13px;
+    padding: 0;
+    font-size: 45px;
+  }  
+
+  /* ------ Page 1 ------- */
+  .container {
+    display: flex;
+    flex-direction: column;
+     margin: 30px;
+    }
+    #telephone{
+      display: block;
+    }
+
+  /* ----- Page 2 -------- */
+  #liste i {
+    left:25px;
+  }
+  #liste {
+    margin-left: 25px;
+  }
+  .box h2, .box h3 , .box p {
+    margin-left: 0;
+  }
+
+  /* -------- Page 3 -------- */
+  #container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 0 50px;
+    height: max-content;
+  }
+  #box1 p, #box2 p {
+    font-size: 20px;
+}
+  
+  /* ------- Vehicules Recents ----- */
+ 
+  #section2 h2{
+    padding: 30px; 
+    font-size: 45px;
+  }
+  #section2 h3 {
+    position: absolute;
+    font-size: 18px;
+    width: 275px;
+    padding-top: 80px;
+}
+  .VehiculesRecents, .Vehicules {
+    flex-basis:100%;
+  }
+  hr {
+    margin: 10px 30px;
+  }
+  .InfoCar hr {
+    margin: 80px 20px ;
+  }
+  button {
+    position: static;
+    margin: 25px 20px 0;
+    height: 40px;
+    width: 90px;
+  }
+  .InfoCar{
+    width: auto;
+    height: 11em;
+  }
+  /* ------------ Page 4 ----------------- */
+  #Page4 {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  #Contact {
+    left: auto;
+  }
+  /* ------- Page 5 --------- */
+  .DernierePage {
+    padding: 80px 0;
+    background-position:center;
+  }
+  #box {
+    padding:50px;
+  }
+  #box h3, #box h3 span{
+    font-size: 45px;
+  }
+  #box p{
+    font-size: 20px;
+  }
+  /* ------- Footer ------- */
+  footer{
+    padding: 0 20px;
+    flex-direction: column;
+    justify-content: flex-start
+  }
+  .Reseaux ul {
+  margin: 0;
+}
+
+
+}
