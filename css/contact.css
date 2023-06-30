@@ -1,0 +1,133 @@
+body{
+    background-color: var(--Gris);
+}
+header{
+    height: 50vh;
+    background-image:url(../image/vehicule3.jpg); 
+    background-size: cover;
+  }
+  .BasDePage{
+    display: none;
+  } 
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    text-align:left;
+    row-gap: 0px;
+    align-content: flex-start;
+    position: absolute;
+    top: 10rem;
+    z-index: 1;
+    width: 85%;
+    height: 35rem;
+    margin: 7%;
+    margin-bottom: 5%;
+    padding: 3rem 5rem;
+    box-shadow: 0 0 20px 0 rgba(45, 45, 45, 0.3);
+    background-color:var(--Blanc);
+    font-size: 20px; 
+}
+.contact h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 52px;
+    flex-basis: 100%;
+    margin-bottom: 3rem;
+}
+.input input, textarea{
+    background-color: var(--Gris);
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px;
+    border: none;
+}
+textarea{
+    height: 13rem;
+}
+.input label, .input input, .input textarea{
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:bold; 
+}
+#gauche{
+    flex-basis: 60%;
+}
+#gaucheGrid{
+    display: grid;
+    column-gap: 40px;
+    row-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 6rem;
+}
+
+#droite{
+    margin-left: 6rem;
+    flex-basis: auto;
+}
+#Button {
+    font-size: 16px;
+    width: 10rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 2px;
+    background-color: var(--Bleu);
+    color: var(--Blanc);
+    box-shadow: 0px 2px 0px rgba(61, 113, 197, .9);
+}
+footer{
+    margin-top: 20%;
+}
+
+ /* ::::::::  Medias Queries :::::::::::: */
+
+ @media screen and (max-width:970px) {
+    header{
+        background-image: url(../image/vehicule3.jpg);
+        background-size: auto 50rem;
+        background-position: top;
+        height: auto;
+    }
+    .BasDePage {
+        display: block;
+        text-align: left;
+        padding: 25px 0 15px;
+    }
+    .BasDePage span {
+        display: none;
+    }
+    .HautDePage {
+     padding: 15px 40px;
+    }
+    #telephone{
+        column-gap: 15px;
+        display: flex;
+    }
+    #telephone img, #telephone p, #telephone span{
+        position: static;
+        font-size: 20px;
+    }
+
+.contact{
+    margin-top: 5rem;
+    height: auto;
+    padding: 10px;
+    position: inherit;
+}
+.contact h1{
+    font-size: 35px;
+    margin-left: 30px;
+}
+#gaucheGrid {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0;
+    justify-content: space-evenly;
+}
+#gauche {
+    flex-basis: 100%;
+}
+#droite{
+    margin:9rem 30px ;
+}
+
+ }
