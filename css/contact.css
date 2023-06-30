@@ -20,7 +20,7 @@ header{
     row-gap: 0px;
     align-content: flex-start;
     justify-content: center;
-    top: 12rem;
+    top: 14rem;
     width: 85%;
     margin: 7%;
     padding: 3rem 1rem;
@@ -78,13 +78,12 @@ textarea{
 }
 
  /* ::::::::  Medias Queries :::::::::::: */
-
- @media screen and (max-width:970px) {
+ @media screen and (max-width:970px){
     header{
         background-image: url(../image/vehicule3.jpg);
         background-size: auto 50rem;
         background-position: top;
-        margin-bottom: 120vh;
+        margin-bottom: 50vh;
     }
     .BasDePage {
         display: block;
@@ -131,3 +130,18 @@ textarea{
 }
 
  }
+@media screen and (max-width: 970px){
+    header {
+    margin-bottom: 60vh;
+    }
+}
+@media screen and (max-width: 665px){
+    header {
+    margin-bottom: 90vh;
+    }
+}
+@media screen and (max-width: 420px){
+    header {
+    margin-bottom: 120vh;
+    }
+}

@@ -68,12 +68,6 @@ span {
     border-radius: 50%;
     overflow: hidden;
     }
-.Info{
-    flex-basis: 320px;
-    }
-    #telephone {
-    flex-basis: 120px;
-    }
     #telephone img {
     top: 25px;
     }
@@ -84,9 +78,7 @@ span {
     #logo a:hover{
     color: #cc6119;
     }
-    .IconHeader{
-    flex-basis: 150px;
-    }
+   
 /*------ Pour page d'accueil et le mobile ------ */
     .BasDePage {
       background-color: var(--Noir);
@@ -280,6 +272,32 @@ footer{
   }
 
   /* ::::::::  Medias Queries :::::::::::: */
+@media screen and (max-width:1600px) {
+  .HautDePage{
+    padding: 15px 35px;
+  }
+ 
+}
+ @media screen and (max-width:1320px) {
+  h1 {
+    font-size: 2em;
+    margin: 0.2em 0 0.67em;
+}
+  #logo{
+  font-size: 25px;
+  text-align: center;
+  flex-basis: 100%;
+}
+#telephone img {
+  top: 125px;
+}
+ .Info{
+    flex-basis: 25%;
+  }
+  #telephone{
+    margin-bottom: 10px;
+  }
+} 
 
   @media screen and (max-width:970px) {
 
@@ -294,6 +312,7 @@ footer{
     /* --------- Header ------------ */
     .HautDePage{
       display: block;
+      padding: 15px 85px 15px;
     }
      #telephone img{
       width: 40px;
@@ -463,5 +482,4 @@ footer h4, #SpanBleu, footer p, footer span {
 #Mail input {
   padding: 0.5rem 6rem;
 }
-
-  }
+}
