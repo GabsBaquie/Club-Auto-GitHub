@@ -1,0 +1,61 @@
+.BasDePage{
+    display: none;
+  } 
+  .EnConstruction {
+    height: 60rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .EnConstruction h1, .EnConstruction img{
+    font-size: 50px;
+  }
+  .EnConstruction img{
+    width: 450px;
+  }
+   /* ::::::::  Medias Queries :::::::::::: */
+ /* @media screen and (max-width: 1100px){
+  
+ } */
+ @media screen and (max-width:970px){
+    .EnConstruction{
+        height: auto;
+        text-align: center;
+    }
+    
+    .BasDePage {
+        display: block;
+        text-align: left;
+        padding: 25px 0 15px;
+    }
+    .BasDePage span {
+        display: none;
+    }
+    .HautDePage {
+     padding: 15px 40px;
+    }
+    #telephone{
+        column-gap: 15px;
+        display: flex;
+    }
+    #telephone img, #telephone p, #telephone span{
+        position: static;
+        font-size: 20px;
+    }
+ }
+/* @media screen and (max-width: 970px){
+    header {
+    margin-bottom: 60vh;
+    }
+}
+@media screen and (max-width: 665px){
+    header {
+    margin-bottom: 90vh;
+    }
+}
+@media screen and (max-width: 420px){
+    header {
+    margin-bottom: 120vh;
+    }
+} */
