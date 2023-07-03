@@ -482,4 +482,7 @@ footer h4, #SpanBleu, footer p, footer span {
 #Mail input {
   padding: 0.5rem 4rem;
 }
+#Reseaux, #Mail {
+  width: -webkit-fill-available;
+}
 }
