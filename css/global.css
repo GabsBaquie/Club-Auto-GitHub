@@ -248,7 +248,7 @@ footer{
   
   #Reseaux img {
     margin-top: 0.5em;
-    margin-left: 0.5em;
+    margin-left: 0.6em;
     width: 2em;
   }
   
@@ -480,7 +480,7 @@ footer h4, #SpanBleu, footer p, footer span {
   width: 100%;
 }
 #Mail input {
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 2.5rem;
 }
 #Reseaux, #Mail {
   width: -webkit-fill-available;
