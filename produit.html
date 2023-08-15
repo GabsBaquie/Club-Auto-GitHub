@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/produit.css">
+    <script defer src="/script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="BasDePage">
+
+        <h2> CLUB AUTO </h2>
+    </section>
+    <header>
+        <!---------- Haut de Page ---------------->
+        
+        <section class="HautDePage">
+            <div id="logo"> <a href="#" > <h1>CLUB AUTO</h1> </a></div>
+            
+            <div class="Info">                        
+                <img src="image/icone-adresse.png" alt="icone-adresse">
+                <p> <span> ADRESSE: </span> <br> AVENUE CHARLES DE GAULLE <br> 75000 PARIS</p>                    
+            </div>                 
+            
+            <div id="telephone">
+                <img src="image/icon-telephone.png" alt="icon-telephone"> 
+                <p> <span> TÉLÉPHONE: </span> <br> 01 23 45 67 89 </p>                                          
+            </div>
+            
+            <div class="Info">
+                <p> <span> OUVERTURE: </span> Du Lundi au Samedi <br> <span> HORAIRES: </span> De 9h à 17h</p>       
+            </div>
+            
+            <div class="IconHeader">
+                <img src="image/SVG/bxl-facebook.svg" alt="facebook">
+                <img src="image/SVG/bxl-twitter.svg" alt="twitter">
+            </div>
+        </section>
+        
+        
+        <!-------------- NAV BAR ------------------->
+        
+        <nav>
+            <a href="#" id="openBtn">&equiv;</a>
+            
+            <div id="mySidenav" class="sidenav">
+                <a id="closeBtn" href="#" class="close">&times;</a>
+                <ul>
+                    <li><a href="index.html"> ACCUEIL </a></li>
+                    <li><a href="vente.html"> VENTE </a> </li>
+                    <li class="active" ><a href="location.html"> LOCATION </a> </li>
+                    <li><a href="contact.html"> CONTACT </a> </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-------------------- Contenu principal ------------------------------>
+
+    <main>  
+
+    <h1>BMW 525i, NAVI, LEATHER, ABS</h1>
+<img src="../image/vehicule2.jpg" alt="">
+<div class="buttonContainer">           
+    <div class="tabsContainer">
+        <button class="tab activeTab">DESCRIPTION</button>
+        <button class="tab">TECHNIQUE</button>
+        <button class="tab">OPTIONS</button>
+        <button class="tab">CONTACT</button>
+    </div> 
+
+</main>
+    <footer>
+        
+     
+        <div id="ClubAuto" class="footer">
+            <h4> <span id="SpanBleu"> CLUB </span> AUTO </h4>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt debitis commodi nobis facilis ut obcaecati veniam soluta  </p>
+       </div>
+    
+       <div id="Horaire" class="footer">
+        <h4> HORAIRE D'OUVERTURE </h4>
+            <p> Lundi - Samedi: <span> 09h - 17h </span> <br> 
+                <br>
+            Dimanche et Jours fériés: <span> Fermé </span> </p>
+       </div>
+    
+       <form id="Mail" class="footer">
+        <h4> NEWSLETTER </h4>
+        <input type="email" placeholder= "  Entrez votre email  " > 
+        <input type="image" id="Send" src="image/SVG/bx-rss.svg">
+            <p> Inscrivez-vous pour recevoir les <br> dernières offres </p>
+       </form>
+    
+       <div id="Reseaux" class="footer">
+        <h4> RESEAUX SOCIAUX </h4>
+            <ul>
+                <li> <a href="https://www.facebook.com/"> <img src="image/SVG/bxl-facebook.svg" alt="facebook"> </a> </li> 
+                <li>  <a href="https://twitter.com/"> <img src="image/SVG/bxl-twitter.svg" alt="twitter"></a> </li> 
+                <li> <a href="https://www.instagram.com/"> <img src="image/SVG/bxl-instagram.svg" alt="instagram"> </a> </li> 
+                <li> <a href="https://support.google.com/answer/2451065?hl=fr"> <img src="image/SVG/bxl-google-plus.svg" alt="GooglePlus"> </a> </li> 
+                <li> <a href="https://www.youtube.com/"> <img src="image/SVG/bxl-youtube.svg" alt=""> </a> </li> 
+            </ul>
+       </div>
+    
+        
+        <div id="Copyright"><hr class="HrGris"> 
+           <p> Copyright &copy; Club Auto - Tous droit resérvé </p>    
+        </div>
+    
+    </footer>
+</body>
