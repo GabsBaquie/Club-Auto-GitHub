@@ -51,7 +51,7 @@
         </section>
         
 
-<!-------------- NAV BAR ------------------->
+<!-------------- NAV BAR -------------------->
 
 <nav>
     <a href="#" id="openBtn">&equiv;</a>
@@ -69,11 +69,157 @@
 </header>
 
 <!-------------------- Contenu principal ------------------------------>
-    <div class="EnConstruction">
-        <h1> Page en Construction </h1>
-         <img src="image/SVG/wired-lineal-1140-error.gif" alt=""> 
-        <!-- <a href="https://lordicon.com/">Icons by Lordicon.com</a> -->
+<div class="container">
+      <section class="SectionRecherche">
+          <div class="CardRecherche"><form action="" class="">
+              <div class="EnTeteRecherche">
+          <img src="image/icone-voiture.png" alt="icone recherche voiture" id="iconeRecherche">
+          <h2>Rechercher</h2>
+      </div>
+      <fieldset>
+          <div>
+              <label for="type"></label>
+              <select name="type" id="type" class="form-select">
+                  <option selected> Type </option>
+                  <option value="BR">BREAK</option>
+                  <option value="SUV">SUV</option>
+                  <option value="BER">BERLINE</option>
+                  <option value="CIT">CITADINE</option>
+              </select>
+          </div>
+          <div>
+              <label for="carburant"></label>
+              <select name="carburant" id="carburant" class="form-select">
+                  <option selected> Carburant </option>
+                  <option value="GO">DIESEL</option>
+                  <option value="ES">ESSENCE</option>
+                  <option value="EL">ELECTRIQUE</option>
+                  <option value="HY">HYBRIDE</option>
+              </select>
+          </div>
+          <div >
+              <label for="marque"></label>
+              <select name="marque" id="marque" class="form-select">
+                  <option selected> Marque </option>
+                  <option value="AU">AUDI</option>
+                  <option value=">BM">BMW</option>
+                  <option value="PE">PEUGEOT</option>
+                  <option value="SE">SEAT</option>
+              </select>
+          </div>
+          <div >
+              <label for="modele"></label>
+              <select name="modele" id="modele" class="form-select ">
+                  <option selected> Modèle </option>
+                  <option value="A">A6</option>
+                  <option value="B">SERIE 3</option>
+                  <option value="C">308</option>
+                  <option value="HY">IBIZA</option>
+              </select>
+          </div>
+          <div >
+              <label for="kilometrage"></label>
+              <select name="kilometrage" id="kilometrage" class="form-select">
+                  <option selected> Kilomètrage Maximal </option>
+                  <option value="A">25 000 KM</option>
+                  <option value="B">50 000 KM</option>
+                  <option value="C">75 000 KM</option>
+                  <option value="D">100 000 KM</option>
+              </select>
+          </div>
+          <div >
+            <label for="anciennete"></label>
+              <select name="anciennete" id="anciennete" class="form-select ">
+                  <option selected> Ancienneté </option>
+                  <option value="A">2022 </option>
+                  <option value="B">2021</option>
+                  <option value="C">2020 </option>
+                  <option value="D">2019</option>
+              </select>
+          </div>
+          <div>
+              <form class="multi-range-field my-5 mb-5 ">
+                  <input type="range" style="width: 100%;" />
+                  <label for="ex3">Prix Minimum</label>
+                  <input type="text" id="ex3" class="form-control mb-3">
+                  <label for="ex4">Prix Maximum</label>
+                  <input type="text" id="ex4" class="form-control mb-3">
+              </form>
+          <div>
+              <button class="btn" type="button">Reinitialiser</button>
+          </div>
+          
+      </fieldset>
+      
+  </form>
+  
+</div> 
+<hr class="mb-2 d-sm-none footer ">
+</section>
+
+
+<!-- Début de la section véhicules qui vient dessus en sm et à gauche sur les écrans supérieur  -->
+<section class="SectionCard">
+
+    <div style="display: flex;">
+        <div class="col-md-6 mb-4">
+          <div  class="cardImage">
+            <img src="image/vehicule2.jpg" class="img-fluid" alt="image du véhicule">
+            <span class="PrixLabel"><h4>20€ / jour</h4></span>
+          </div>
+        </div>
+        <div class="flex">
+          <h5 class="col-12">AUDI A4 SPORTLINE</h5>
+          <p class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quaerat itaque debitis vel error provident necessitatibus tr quos officiis.</p>
+          <a href="#" class="text-decoration-none h5">>> En savoir plus <<</a>
+        </div>
     </div>
+
+  <div style="display: flex;">
+        <div class="col-md-6 mb-4">
+          <div  class="cardImage">
+            <img src="image/vehicule2.jpg" class="img-fluid" alt="image du véhicule">
+            <span class="PrixLabel"><h4>20€ / jour</h4></span>
+          </div>
+        </div>
+        <div class="flex">
+          <h5 class="col-12">AUDI A4 SPORTLINE</h5>
+          <p class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quaerat itaque debitis vel error provident necessitatibus tr quos officiis.</p>
+          <a href="#" class="text-decoration-none h5">>> En savoir plus <<</a>
+        </div>
+    </div>
+
+    <div class="cardImage">
+        <div class="col-md-6 mb-4">
+          <div  class="cardImage">
+            <img src="image/vehicule2.jpg" class="img-fluid" alt="image du véhicule">
+            <span class="PrixLabel"><h4>20€ / jour</h4></span>
+          </div>
+        </div>
+        <div class="flex">
+          <h5 class="col-12">AUDI A4 SPORTLINE</h5>
+          <p class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quaerat itaque debitis vel error provident necessitatibus tr quos officiis.</p>
+          <a href="#" class="text-decoration-none h5">>> En savoir plus <<</a>
+        </div>
+    </div>
+
+  <div  class="cardImage">
+        <div class="col-md-6 mb-4">
+          <div  class="cardImage">
+            <img src="image/vehicule2.jpg" class="img-fluid" alt="image du véhicule">
+            <span class="PrixLabel"><h4>20€ / jour</h4></span>
+          </div>
+        </div>
+        <div class="flex">
+          <h5 class="col-12">AUDI A4 SPORTLINE</h5>
+          <p class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quaerat itaque debitis vel error provident necessitatibus tr quos officiis.</p>
+          <a href="#" class="text-decoration-none h5">>> En savoir plus <<</a>
+        </div>
+    </div>
+
+</section>
+
+</div>  
 
 <!----------- Footer -------------------------->
 <footer>
